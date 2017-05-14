@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
+  main {
+    width: 320px;
+    height: 568px;
+    margin: auto;
+    background-color: white;
+  }
+}
