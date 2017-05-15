@@ -16,4 +16,12 @@
   // Add geolocate control to the map.
   map.addControl(new mapboxgl.GeolocateControl());
 </script>
-<h2>Nearby</h2> {{outlet}}
+<h2>Nearby</h2>
+<ul id="nearby-users">
+  {{#each model as |nearby|}}
+    <li class="profile">
+      <img src="{{nearby.image}}">
+      <h3>{{nearby.text}}</h3>
+    </li>
+  {{/each}}
+</ul>
