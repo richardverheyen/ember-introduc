@@ -1,0 +1,29 @@
+<header>
+  <a href="#">
+    <img src="/img/arrow-down-big.svg">
+  </a>
+</header>
+
+<div id='map'></div>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoicmljaGFyZHZlcmhleWVuIiwiYSI6ImNqMms4ZjRmYTAwMHAzM285aXg0aXRtZmMifQ.UgSdnfuJU4EmzBlwHBWtDw';
+  var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [-96, 37.8], // starting position
+    zoom: 3 // starting zoom
+  });
+  // Add geolocate control to the map.
+  map.addControl(new mapboxgl.GeolocateControl());
+</script>
+
+<h2>Nearby</h2>
+<ul id="nearby-users">
+  {{#each model as |nearby|}}
+    <li class="profile">
+      <img src="{{nearby.image}}">
+      <h3>{{nearby.text}}</h3>
+    </li>
+  {{/each}}
+</ul>
