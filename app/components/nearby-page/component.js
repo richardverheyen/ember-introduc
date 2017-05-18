@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-
+  tagName: 'main',
+  elementId: 'nearby-page'
 });
 // mapboxgl.accessToken = 'pk.eyJ1IjoicmljaGFyZHZlcmhleWVuIiwiYSI6ImNqMms4ZjRmYTAwMHAzM285aXg0aXRtZmMifQ.UgSdnfuJU4EmzBlwHBWtDw';
 // var map = new mapboxgl.Map({
