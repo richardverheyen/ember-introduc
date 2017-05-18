@@ -7,22 +7,22 @@ export default function() {
         type: 'profile',
         id: '1',
         attributes: {
-          text: 'rentals',
+          text: 'Studying for a law degree, in need of a coffee!',
           image: '/img/scarjo.jpg'
         }
       }, {
         type: 'profile',
         id: '2',
         attributes: {
-          text: 'rentals',
-          image: '/img/scarjo.jpg'
+          text: 'I may look like I\'m working but I\'m really watching cat videos',
+          image: '/img/estone.jpg'
         }
       }, {
         type: 'profile',
         id: '3',
         attributes: {
-          text: 'rentals',
-          image: '/img/scarjo.jpg'
+          text: 'Looking for any excuse to take a break',
+          image: '/img/ewatson.jpg'
         }
       }]
     };
