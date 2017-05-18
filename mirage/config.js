@@ -1,7 +1,7 @@
 export default function() {
   this.namespace = '/api';
 
-  this.get('/profiles', function() {
+  this.get('/nearby', function() {
     return {
       data: [{
         text: 'rentals',
