@@ -7,6 +7,9 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     sassOptions: {},
+    autoprefixer: {
+      browsers: ['> 1% in AU', 'Explorer > 9', 'Firefox >= 17', 'Chrome >= 10', 'Safari >= 6', 'iOS >= 6']
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
