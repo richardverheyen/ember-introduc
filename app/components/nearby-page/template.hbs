@@ -51,7 +51,7 @@
 <h2>Nearby</h2>
 <ul id="nearby-users">
   {{#each model as |profile|}}
-    <li class="profile">
+    <li {{action 'toggleExpandedView'}} class="profile {{if expanded "expanded"}}">
       <img src="{{profile.image}}">
       <h3>{{profile.text}}</h3>
     </li>
