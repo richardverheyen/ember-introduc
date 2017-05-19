@@ -6,7 +6,7 @@ export default Ember.Component.extend({
   isExpanded: false,
   actions: {
     toggleExpandedView() {
-      this.toggleProperty('expanded');
+      this.toggleProperty('isExpanded');
       console.log('Toggled expanded state');
     }
   }
