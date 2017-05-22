@@ -1,1 +1,38 @@
-#profile {}
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  header {
+    position: relative;
+    width: 100%;
+    a {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      img {
+        height: 30px;
+      }
+    }
+  }
+  #profile-image {
+    margin: 60px 20px 20px;
+    border-radius: 100%;
+    width: 280px;
+  }
+  #profile-text {
+    font-weight: 300;
+    font-size: 5.4vw;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: auto;
+  }
+  #ping {
+    text-transform: uppercase;
+    background-color: $rubber-ducky;
+    font-weight: 300;
+    padding: 12px 80px;
+    letter-spacing: 1.5px;
+    border-radius: 2px;
+    margin: 20px auto 60px;
+  }
+}

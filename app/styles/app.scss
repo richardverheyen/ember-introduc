@@ -1,21 +1,17 @@
-@import "common";
-@import "app/components/profiles-page/style";
-@import "app/components/profiles-selected/style";
-
-//Examples
-// // SASS
-// @import "variables";
+// SASS
+@import "variables";
 // @import "mixins";
 // @import "animations";
-//
+
 // // Commons
 // @import "normalize";
 // @import "fonts";
-// @import "common";
+@import "common";
 //
 // // Page components
 // @import "app/components/page-wrapper/style";
-// etc.
+@import "app/components/profiles-page/style";
+@import "app/components/profiles-selected/style";
 //
 // // Modal components
 // @import "app/components/modal-wrapper/style";

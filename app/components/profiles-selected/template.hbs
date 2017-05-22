@@ -1,6 +1,8 @@
-{{#link-to 'profiles'}}
-  <img src="/img/arrow-right.svg">
-{{/link-to}}
-
-<img src="{{model.image}}">
-<p>{{model.text}}</p>
+<header>
+  {{#link-to 'profiles'}}
+    <img src="/img/arrow-right.svg">
+  {{/link-to}}
+</header>
+<img id="profile-image" src="{{model.image}}">
+<p id="profile-text">{{model.text}}</p>
+<a id="ping" {{action 'ping-user'}}>ping me</a>
