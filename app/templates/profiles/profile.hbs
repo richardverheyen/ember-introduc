@@ -1,3 +1,4 @@
-{{outlet}}
 <h1>OPENED PROFILE WITH ID: {{model.id}}</h1>
+<img src="{{model.image}}" alt="">
 <p>{{model.text}}</p>
+{{#link-to 'profiles'}}back to profiles{{/link-to}}
