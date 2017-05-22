@@ -9,6 +9,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('nearby');
   this.route('profile');
+  this.route('profiles', { path: '/profiles' }, function() {
+    this.route('profile', { path: '/:id' });
+  });
 });
 
 export default Router;
