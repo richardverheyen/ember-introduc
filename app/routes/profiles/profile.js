@@ -16,6 +16,6 @@ export default Ember.Route.extend({
     this.render('profiles/profile', {
       into: 'application'
     });
-  },
+  }
 
 });
