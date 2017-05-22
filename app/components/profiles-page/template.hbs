@@ -52,8 +52,10 @@
 <ul id="nearby-users">
   {{#each model as |profile|}}
     <li class="profile">
-      <img src="{{profile.image}}">
-      <h3>{{profile.text}}</h3>
+      {{#link-to 'profiles.profile' profile.id}}
+        <img src="{{profile.image}}">
+        <h3>{{profile.text}}</h3>
+      {{/link-to}}
     </li>
   {{/each}}
 </ul>
