@@ -10,6 +10,12 @@ export default Ember.Route.extend({
     if (!model) {
       this.transitionTo('profiles');
     }
-  }
+  },
+
+  renderTemplate() {
+    this.render('profiles/profile', {
+      into: 'application'
+    });
+  },
 
 });
