@@ -1,7 +1,10 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import {
+  moduleForComponent,
+  test
+} from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('profile-expanded', 'Integration | Component | profile expanded', {
+moduleForComponent('profiles-page', 'Integration | Component | profiles page', {
   integration: true
 });
 
@@ -10,15 +13,15 @@ test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
-  this.render(hbs`{{profile-expanded}}`);
+  this.render(hbs `{{profiles-page}}`);
 
   assert.equal(this.$().text().trim(), '');
 
   // Template block usage:
-  this.render(hbs`
-    {{#profile-expanded}}
+  this.render(hbs `
+    {{#profiles-page}}
       template block text
-    {{/profile-expanded}}
+    {{/profiles-page}}
   `);
 
   assert.equal(this.$().text().trim(), 'template block text');
