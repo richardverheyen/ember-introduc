@@ -25,7 +25,7 @@
   #nearby-users {
     padding: 0;
     margin: 0;
-    .profile {
+    li.profile {
       display: flex;
       a {
         display: flex;
@@ -33,10 +33,11 @@
         justify-content: flex-start;
         list-style: none;
         height: 70px;
-        padding-left: 20px;
+        padding: 0 20px;
         border-top: 1px solid #eee;
         text-decoration: none;
         color: black;
+        overflow: hidden;
 
         img {
           border-radius: 100%;
@@ -47,7 +48,8 @@
         h3 {
           font-size: 13px;
           font-weight: 300;
-          margin: 0 20px 0 0;
+          overflow: hidden;
+
         }
       }
     }
