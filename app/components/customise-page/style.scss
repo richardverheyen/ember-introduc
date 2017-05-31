@@ -1,1 +1,17 @@
-#customise-page {}
+#customise-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div#entry-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      font-weight: 300;
+    }
+    input {}
+  }
+  a#link-to-profiles {
+    margin: auto auto 20px;
+  }
+}

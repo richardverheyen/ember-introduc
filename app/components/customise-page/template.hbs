@@ -1,3 +1,9 @@
 <h1>Customise Page</h1> {{yield}}
 
-{{#link-to 'profiles'}}link back{{/link-to}}
+<div id="entry-fields">
+  <h3>Your display image</h3> {{input value=model.image}}
+
+  <h3>Your tagline</h3> {{input value=model.tagLine}}
+</div>
+
+{{#link-to 'profiles' id="link-to-profiles" }}link back{{/link-to}}
