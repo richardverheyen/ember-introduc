@@ -4,8 +4,25 @@
   </a>
 </header>
 
-<div id="map"></div>
+<div id='map'></div>
 <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoicmljaGFyZHZlcmhleWVuIiwiYSI6ImNqMms4ZjRmYTAwMHAzM285aXg0aXRtZmMifQ.UgSdnfuJU4EmzBlwHBWtDw';
+  // Try HTML5 geolocation.
+  navigator.geolocation.getCurrentPosition(function(position) {
+    console.log([position.coords.latitude, position.coords.longitude]);
+    const ll = new mapboxgl.LngLat(position.coords.latitude, position.coords.longitude);
+    var map = new mapboxgl.Map({
+      container: 'map',
+      center: [55.9424619, -3.1823275],
+      style: 'mapbox://styles/mapbox/light-v9',
+      zoom: 19
+    });
+    map.addControl(new mapboxgl.GeolocateControl());
+  });
+</script>
+
+<!-- <div id="map"></div> -->
+<!-- <script>
   var map, infoWindow;
 
   function initMap() {
@@ -40,9 +57,9 @@
       'Error: Your browser doesn\'t support geolocation.');
     infoWindow.open(map);
   }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDhnHmVcMPmW-rmMisHMcdV4sjpCPbyJY&callback=initMap">
-</script>
+</script> -->
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDhnHmVcMPmW-rmMisHMcdV4sjpCPbyJY&callback=initMap">
+</script> -->
 
 {{outlet}}
 <h2>Nearby</h2>
