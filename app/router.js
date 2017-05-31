@@ -14,6 +14,7 @@ Router.map(function() {
       path: '/:id'
     });
   });
+  this.route('customise');
 });
 
 export default Router;

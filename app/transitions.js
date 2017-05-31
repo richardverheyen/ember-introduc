@@ -5,4 +5,10 @@ export default function() {
     this.use('toRight'),
     this.reverse('toLeft')
   );
+  this.transition(
+    this.fromRoute('profiles'),
+    this.toRoute('customise'),
+    this.use('toDown'),
+    this.reverse('toUp')
+  );
 }
