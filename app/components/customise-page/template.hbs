@@ -1,9 +1,16 @@
-<h1>Customise Page</h1> {{yield}}
+<h1>Your Profile</h1> {{yield}}
 
-<div id="entry-fields">
+<div id="profile-fields">
   <h3>Your display image</h3> {{input value=model.image}}
-
   <h3>Your tagline</h3> {{input value=model.tagLine}}
 </div>
+<ul id="search-fields">
+  <li><label>I am:</label>
+    <input type="range" min="-1" max="1" value="0" id="userGender">
+  </li>
+  <li><label>Introduce me to:</label>
+    <input type="range" min="-1" max="1" value="0" id="searchGender">
+  </li>
+</ul>
 
 {{#link-to 'profiles' id="link-to-profiles" }}link back{{/link-to}}
