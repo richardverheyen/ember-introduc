@@ -1,8 +1,8 @@
 <h1>Your Profile</h1> {{yield}}
 
 <div id="profile-fields">
-  <h3>Your display image</h3> {{input value=model.image}}
-  <h3>Your tagline</h3> {{input value=model.tagline}}
+  <h3>Your display image</h3> {{input value=profile.image}}
+  <h3>Your tagline</h3> {{input value=profile.tagline}}
 </div>
 <!-- <ul id="search-fields">
   <li><label>I am:</label>
@@ -14,5 +14,5 @@
 </ul> -->
 
 {{#link-to 'profiles' id="link-to-profiles" }}
-  <img src="/img/arrow-down-big.svg">
+  <img {{action 'pushToAPI' profile}} src="/img/arrow-down-big.svg">
 {{/link-to}}
