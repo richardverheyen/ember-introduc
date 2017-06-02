@@ -4,14 +4,24 @@ export default Ember.Component.extend({
   tagName: 'main',
   elementId: 'customise-page',
   actions: {
-
     pushToAPI() {
-      navigator.geolocation.getCurrentPosition(function(position) {
-        console.log(position.coords.latitude);
-        console.log(position.coords.longitude);
-      });
-
-      this.get('profile').save();
+      this.get('profile').save()
     }
+  },
+  // latitude: null,
+  // longitude: null,
+  getGeo() {
+    if (navigator.geolocation) {
+      return navigator.geolocation.getCurrentPosition(position => {
+        this.get('profile').set('lat', position.coords.latitude);
+        this.get('profile').set('lng', position.coords.longitude);
+      });
+    } else {
+      console.warn('This browser does not support HTML5 geolocation.');
+    }
+  },
+  didInsertElement() {
+    this.getGeo();
   }
+
 });
