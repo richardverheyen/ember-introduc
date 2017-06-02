@@ -9,7 +9,6 @@
   mapboxgl.accessToken = 'pk.eyJ1IjoicmljaGFyZHZlcmhleWVuIiwiYSI6ImNqMms4ZjRmYTAwMHAzM285aXg0aXRtZmMifQ.UgSdnfuJU4EmzBlwHBWtDw';
   // Try HTML5 geolocation.
   navigator.geolocation.getCurrentPosition(function(position) {
-    console.log([position.coords.latitude, position.coords.longitude]);
     const ll = new mapboxgl.LngLat(position.coords.latitude, position.coords.longitude);
     var map = new mapboxgl.Map({
       container: 'map',
