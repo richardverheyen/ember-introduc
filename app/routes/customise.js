@@ -2,8 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.createRecord('profile', {
-      id: 0
-    })
+    return this.store.createRecord('profile', {})
   }
 });

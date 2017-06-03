@@ -8,8 +8,8 @@ export default Ember.Component.extend({
   getGeo() {
     if (navigator.geolocation) {
       return navigator.geolocation.getCurrentPosition(position => {
-        this.get('profile').set('latitude', position.coords.latitude);
-        this.get('profile').set('longitude', position.coords.longitude);
+        this.set('latitude', position.coords.latitude);
+        this.set('longitude', position.coords.longitude);
       });
     } else {
       console.warn('This browser does not support HTML5 geolocation.');
