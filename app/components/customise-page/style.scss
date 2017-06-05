@@ -9,7 +9,16 @@
     h3 {
       font-weight: 300;
     }
-    input {}
+    input {
+      text-align: center;
+      border: none;
+      border-bottom: 1px solid $rubber-ducky;
+      font-size: 18px;
+      font-weight: 300;
+      &:focus {
+        outline: none;
+      }
+    }
   }
   ul#search-fields {
     padding-left: 0;
@@ -19,9 +28,7 @@
       align-items: center;
       justify-content: space-between;
       list-style: none;
-      input {
-        margin-left: 10px;
-      }
+      input {}
     }
   }
   a#link-to-profiles {
